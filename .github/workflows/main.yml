@@ -29,7 +29,6 @@ jobs:
 
             - name: SonarQube Scan
               run: sonar-scanner
-                 
                  -Dsonar.host.url=${{ secrets.SONAR_URL }}
                  -Dsonar.login=${{ secrets.SONAR_TOKEN }}
                  -Dsonar.projectKey=${{ secrets.SONAR_PROJECT_KEY }}
@@ -38,7 +37,7 @@ jobs:
                  -Dsonar.junit.reportsPath=target/surefire-reports/
                  -Dsonar.jacoco.reportsPath=target/jacoco.exec
                  -Dsonar.java.checkstyle.reportsPath=target/checkstyle-result.xml
-                 -Dsonar.java.binaries=target/test-classes/com/visualpathit/account
+                # -Dsonar.java.binaries=target/test-classes/com/visualpathit/account
 
            # - name: SonarQube Quality Gate Check
            #   id: sonarqube-quality-gate-check
