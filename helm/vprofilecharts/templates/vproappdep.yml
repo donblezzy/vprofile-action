@@ -14,8 +14,6 @@ spec:
       labels:
         app: vproapp
     spec:
-      imagePullSecrets:
-        - name: regcred   # <-- Add this line
       containers:
       - name: vproapp
         image: "{{ .Values.appimage }}:{{ .Values.apptag }}"
