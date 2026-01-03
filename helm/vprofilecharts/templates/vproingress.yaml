@@ -7,7 +7,7 @@ metadata:
 spec:
   ingressClassName: nginx
   rules:
-  - host: vpro.damdav.online
+  - host: www.damdav.online
     http:
       paths:
       - path: /
